@@ -172,6 +172,7 @@ public class TestList {
     // TODO in a single statement using retainAll and List.of,
     // remove items from the list to make the following assertions pass
     // (without touching the assertions themselves)
+    list.retainAll(List.of(77, 77, 77));
     assertEquals(3, list.size());
     assertEquals(List.of(77, 77, 77), list);
   }
@@ -188,6 +189,9 @@ public class TestList {
     // TODO use the set method to change specific elements in the list
     // such that the following assertions pass
     // (without touching the assertions themselves)
+    list.set(list.indexOf(77), 99);
+    list.set(list.indexOf(77), 99);
+    list.set(list.indexOf(77), 99);
     assertEquals(7, list.size());
     assertEquals(33, list.get(0).intValue());
     assertEquals(99, list.get(1).intValue());
