@@ -15,6 +15,38 @@ TestList.java
 TestPerformance.java
 5.// TODO run test and record running times for SIZE = 10, 100, 1000, 10000, ...
   // which of the two lists performs better as the size increases?
+    testArrayListAddRemove()
+    235ms
+    270ms
+    260ms
+    273ms
+    455ms
+    2s
+
+    testLinkedListAddRemove()
+    244ms
+    236ms
+    245ms
+    249ms
+    262ms
+    404ms
+
+    testArrayListAccess()
+    239ms
+    246ms
+    255ms
+    249ms
+    248ms
+    281ms
+
+    testLinkedListAccess()
+    230ms
+    238ms
+    249ms
+    289ms
+    343ms
+    409ms
+
     For the ListAddRemove methods the linked list performed better as SIZE grew
-    For the ListAccess methods the Array list outperformed the linked list every time
+    For the ListAccess methods the Array list outperformed the linked list as SIZE grew
     When SIZE = 10000000 all methods failed with the following error "java.lang.OutOfMemoryError: Java heap space"
